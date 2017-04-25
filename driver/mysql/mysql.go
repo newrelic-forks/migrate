@@ -12,9 +12,9 @@ import (
 	"strings"
 
 	"github.com/go-sql-driver/mysql"
-	"github.com/mattes/migrate/driver"
-	"github.com/mattes/migrate/file"
-	"github.com/mattes/migrate/migrate/direction"
+	"github.com/newrelic-forks/migrate/driver"
+	"github.com/newrelic-forks/migrate/file"
+	"github.com/newrelic-forks/migrate/migrate/direction"
 )
 
 type Driver struct {

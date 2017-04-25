@@ -7,9 +7,9 @@ import (
 	"time"
 	"fmt"
 
-	"github.com/mattes/migrate/file"
-	"github.com/mattes/migrate/migrate/direction"
-	pipep "github.com/mattes/migrate/pipe"
+	"github.com/newrelic-forks/migrate/file"
+	"github.com/newrelic-forks/migrate/migrate/direction"
+	pipep "github.com/newrelic-forks/migrate/pipe"
 )
 
 // TestMigrate runs some additional tests on Migrate().
@@ -38,13 +38,13 @@ func TestMigrate(t *testing.T) {
 	for tick := range ticker.C {
 		if tick.After(until) {
 			ticker.Stop()
-			break;
+			break
 		}
 		connection, err = sql.Open("mssql", driverURL)
 		err = connection.Ping()
 		if err == nil {
 			ticker.Stop()
-			break;
+			break
 		}
 	}
 
